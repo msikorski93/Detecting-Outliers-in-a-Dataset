@@ -364,7 +364,7 @@ select @med_we = (select
 select @IQR_we = @Q3_we - @Q1_we
 
 select
-'width' as dimension, min(width) as min_val, @Q1_w as Q1, round(avg(width), 3) as mean_val, @med_w as Q2_median,  @IQR_w as IQR, @Q3_w as Q3, max(width) as mav_val
+'width' as dimension, min(width) as min_val, @Q1_w as Q1, round(avg(width), 3) as mean_val, @med_w as Q2_median, @IQR_w as IQR, @Q3_w as Q3, max(width) as mav_val
 from products
 union all
 select
